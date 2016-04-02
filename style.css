@@ -9,15 +9,17 @@ nav li {
   display: inline;
   margin: 0 10px
 }
-nav a:link {
+a:link {
   color: rgb(0, 0, 0);
 }
-nav a:visited {
+a:visited {
   color: rgb(0, 0, 0);
 }
-nav a:hover {
+a:hover {
   color: rgb(50, 50, 50);
 }
+
+
 
 footer {
   clear: both;
