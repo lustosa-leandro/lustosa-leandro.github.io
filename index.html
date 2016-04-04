@@ -1,35 +1,103 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8">
-  <title>leandro lustosa m.sc.</title>
-  <link rel="stylesheet" href="style.css">
+<title>leandro lustosa</title>
+<meta charset="utf-8">
+<script src="js/jquery.tools.min.js"></script>
+<link rel="stylesheet" href="styles/reset.css" type="text/css">
+<link rel="stylesheet" href="styles/styl.css" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 </head>
 <body>
-
-<header>
-  <h1>leandro lustosa</h1>
-</header>
-
-<nav>
-  <li>home</li>
-  <li><a href="./publications/publications.html">publications</a></li>
-  <li><a href="./projects/projects.html">projects</a></li>
-  <li><a href="./courses/courses.html">courses</a></li>
-</nav>
-
-<section>
-<iframe width="350" height="240" src="https://w2.countingdownto.com/1334597" frameborder="0"></iframe>
-</section>
-
-<section>
-  <p>thesis page count: 48 </p>
-</section>
-
-<footer>
-  <p>last updated: 2016 april 2 </p>
-</footer>
-
+<div id="header">
+  <div id="header_in">
+    <h1><a href="index.html"><b>leandro lustosa</b></a></h1>
+    <div id="menu">
+      <ul>
+        <li><a href="index.html" class="active">home</a></li>
+        <li><a href="publications/pubs.html">pubs</a></li>
+        <li><a href="projects/projects.html">projects</a></li>
+        <li><a href="courses/courses.html">courses</a></li>
+        <li><a href="contact/contact.html">contact</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div id="main_part">
+  <div id="main_part_in">
+    <h2>welcome to my website</h2>
+    <p>currently a phd student at ISAE - guidance navigation and control specialist</p>
+  </div>
+  <div class="button_main">
+    <div class="pxline"></div>
+    <a href="index_old.html" class="button_dark">lite version</a> </div>
+</div>
+<div id="content">
+  <div class="thirds">
+    <h3>research interests?</h3>
+    <p>guidance, navigation and control for use in unmanned autonomous vehicles: theoretical and real-time embedded implementation issues.</p>
+  </div>
+  <div class="thirds">
+    <h3>education?</h3>
+    <p>m.sc. control systems, ITA, Brazil, 2009</p>
+    <p>b.sc. control systems, UnB, Brazil, 2012</p>
+  </div>
+  <div class="thirds">
+    <h3>thesis?</h3>
+    <p>elegant modeling and control of novel hybrid micro-drone architectures</p>
+  </div>
+  <hr class="cleanit">
+  <div class="banner1">
+    <p>i am all for open source!</p>
+    <p> <a href="https://github.com/lustosa-leandro" class="button_dark" target="_blank">my github</a> </p>
+  </div>
+  <h3>my recent work</h3>
+  <div class="fourths_portfolio">
+    <h4>tilt-body paper<br>
+      <span>see detail</span> </h4>
+    <a href="publications/pubs.html"><img src="img/portfolio_mavion.png" alt=""></a> </div>
+  <div class="fourths_portfolio">
+    <h4>vortex-panel in python<br>
+      <span>see detail</span> </h4>
+    <a href="projects/projects.html"><img src="img/portfolio_airflow.png" alt=""></a> </div>
+  <div class="fourths_portfolio">
+    <h4>ins navigation in matlab<br>
+      <span>see detail</span> </h4>
+    <a href="projects/projects.html"><img src="img/portfolio_navigation.png" alt=""></a> </div>
+  <div class="fourths_portfolio">
+    <h4>visual-aided navigation book chapter<br>
+      <span>see detail</span> </h4>
+    <a href="publications/pubs.html"><img src="img/portfolio_chapter.png" alt=""></a> </div>
+  <hr class="cleanit">
+  <div class="cara"></div>
+  <div class="about_blok">
+    <h3>what's new</h3>
+    <p class="about">publications list is updated!</p>
+    <a href="publications/pubs.html" class="button_light">go there</a> </div>
+  <div class="testimonials">
+    <div class="quote">
+      <div class="tc_div_36238" style="width:250px;height:100px;border:0px solid #C0C0C0;"><a title="phd defense" href="http://www.tickcounter.com/countdown/1475229600000/europe-paris/dhms/FFFFFF000000000000FF0000/phd_defense">phd defense</a><a title="Countdown" href="http://www.tickcounter.com/">Countdown</a></div><script type="text/javascript">(function(){ var s=document.createElement('script');s.src="http://www.tickcounter.com/loader.js";s.async='async';s.onload=function() { tc_widget_loader('tc_div_36238', 'Countdown', 650, ['1475229600000', 'europe-paris', 'dhms', 'FFFFFF000000000000FF0000', '650', 'C0C0C01', 'phd defense']);};s.onreadystatechange=s.onload;var head=document.getElementsByTagName('head')[0];head.appendChild(s);}());</script>
+    </div>
+    <div class="quote">page count: 48</div>
+    <div class="quote">i am not so sure that was a good idea jan!</div>
+    <span class="testimonials_bottom"></span>
+    <ul class="controls">
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+    </ul>
+    <span class="by">bolting said this was a good idea</span> </div>
+</div>
+<hr class="cleanit">
+<div id="footer">
+  <div id="footer_in">
+    <p>updated in april 4</p>
+    <span>adapted from the design by: <a href="http://ries.cz">Vil&eacute;m Ries</a></span></div>
+</div>
+<script>
+$(function () {
+    $("ul.controls").tabs("div.testimonials > div");
+});
+</script>
 </body>
 </html>
