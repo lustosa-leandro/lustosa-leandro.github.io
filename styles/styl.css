@@ -38,7 +38,7 @@ div.cara{clear:both; width:940px; height:1px; background-color:#ccc; margin-top:
 #menu ul li{float:left; display:inline}
 #menu ul li a{text-decoration:none; color:#101115; text-transform:uppercase; font-weight:300; letter-spacing:1px; display:block; padding:29px 40px 0 40px; height:46px; background-color:#fff}
 #menu ul li a:hover{background-color:#f3f3f3}
-#menu ul li a.active{background:none; color:#fff}
+#menu ul li a.active{background: #000; color:#fff}
 
 /* ---------- Main part (slider) ---------- */
 
