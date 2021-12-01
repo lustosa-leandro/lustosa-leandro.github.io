@@ -53,6 +53,254 @@
     <p>&nbsp;</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
+
+
+    <table>
+      <tr>
+        <th>Category |</th>
+        <th>Points Possible |</th>
+        <th>Points Awarded |</th>
+        <th>Percent Achieved |</th>
+        <th>Ranking</th>
+      </tr>
+      <tr>
+        <td align="center">A</td>
+        <td align="center">4</td>
+        <td align="center"><b><div><span id="TotalASummary"></span></div></b></td>
+        <td align="center"><b><div><span id="TotalAPercent"></span></div></b></td>
+        <td bgcolor="#92d050" align="center"></td>
+      </tr>
+      <tr>
+        <td align="center">B</td>
+        <td align="center">4</td>
+        <td align="center"><b><div><span id="TotalBSummary"></span></div></td>
+        <td align="center"><b><div><span id="TotalBPercent"></span></div></td>
+        <td bgcolor="#92d050" align="center"></td>
+      </tr>
+      <tr>
+        <td align="center">C</td>
+        <td align="center">4</td>
+        <td align="center"><b><div><span id="TotalCSummary"></span></div></td>
+        <td align="center"><b><div><span id="TotalCPercent"></span></div></td>
+        <td bgcolor="#92d050" align="center"></td>
+      </tr>
+   </table>
+   <table>
+     <tr>
+       <th>Section A.</th>
+       <td></td>
+       <td></td>
+     </tr>
+     <tr>
+       <td></td>
+     </tr>
+     <tr>
+       <td><b>A.1</b></td>
+       <td><b>Value</b></td>
+       <td><b>Awarded</b></td>
+     </tr>
+     <tr>
+       <td>a)</td>
+       <td align="center">1</td>
+       <td align="center"><select class="select" onChange="calcA1();" id="Aa1">
+                         <option value="0">0</option>
+                         <option value="1">1</option>
+                       </select></td>
+     </tr>
+     <tr>
+       <td>b)</td>
+       <td align="center">1</td>
+       <td align="center"><select class="select" onChange="calcA1();" id="Ab1">
+                          <option value="0">0</option>
+                          <option value="1">1</option>
+                          </select></td>
+     </tr>
+     <tr>
+       <td>c)</td>
+       <td align="center">2</td>
+       <td align="center"><select class="select" onChange="calcA1();" id="Ac1">
+                          <option value="0">0</option>
+                          <option value="2">2</option>
+                          </select></td>
+     </tr>
+     <tr>
+       <td class="subtotal">Section A. Total</td>
+       <td align="center"><b>4</b></td>
+       <td align="center"><b><div><span id="totalA"></span></div></b></td>
+     </tr>
+
+     <tr>
+       <th>Section B.</th>
+       <td></td>
+       <td></td>
+     </tr>
+     <tr>
+       <td></td>
+     </tr>
+     <tr>
+       <td><b>B.1</b></td>
+       <td><b>Value</b></td>
+       <td><b>Awarded</b></td>
+     </tr>
+     <tr>
+       <td>a)</td>
+       <td align="center">1</td>
+       <td align="center"><select class="select" onChange="calcB1();" id="Ba1">
+                         <option value="0">0</option>
+                         <option value="2">2</option>
+                       </select></td>
+     </tr>
+     <tr>
+       <td>b)</td>
+       <td align="center">1</td>
+       <td align="center"><select class="select" onChange="calcB1();" id="Bb1">
+                          <option value="0">0</option>
+                          <option value="1">1</option>
+                          </select></td>
+     </tr>
+     <tr>
+       <td>c)</td>
+       <td align="center">2</td>
+       <td align="center"><select class="select" onChange="calcB1();" id="Bc1">
+                          <option value="0">0</option>
+                          <option value="2">2</option>
+                          </select></td>
+     </tr>
+
+     <tr>
+       <td class="subtotal">Section B. Total</td>
+       <td align="center"><b>5</b></td>
+       <td align="center"><b><div><span id="totalB"></span></div></b></td>
+     </tr>
+     <tr>
+       <th>Section C.</th>
+       <td></td>
+       <td></td>
+     </tr>
+     <tr>
+       <td></td>
+     </tr>
+     <tr>
+       <td><b>C.1</b></td>
+       <td><b>Value</b></td>
+       <td><b>Awarded</b></td>
+     </tr>
+     <tr>
+       <td>a)</td>
+       <td align="center">1</td>
+       <td align="center"><select class="select" onChange="calcC1();" id="Ca1">
+                         <option value="0">0</option>
+                         <option value="3">3</option>
+                       </select></td>
+     </tr>
+     <tr>
+       <td>b)</td>
+       <td align="center">1</td>
+       <td align="center"><select class="select" onChange="calcC1();" id="Cb1">
+                          <option value="0">0</option>
+                          <option value="1">1</option>
+                          </select></td>
+     </tr>
+     <tr>
+       <td>c)</td>
+       <td align="center">2</td>
+       <td align="center"><select class="select" onChange="calcC1();" id="Cc1">
+                          <option value="0">0</option>
+                          <option value="2">2</option>
+                          </select></td>
+     </tr>
+     <tr>
+       <td class="subtotal">Section C. Total</td>
+       <td align="center"><b>6</b></td>
+       <td align="center"><b><div><span id="totalC"></span></div></b></td>
+     </tr>
+   </table>
+
+   <script>
+   function calcA1R() {
+     var Aa1 = document.getElementById('Aa1');
+     var Ab1 = document.getElementById('Ab1');
+     var Ac1 = document.getElementById('Ac1');
+
+     var Aa1Val = Aa1.options[Aa1.selectedIndex].value;
+     var Ab1Val = Ab1.options[Ab1.selectedIndex].value;
+     var Ac1Val = Ac1.options[Ac1.selectedIndex].value;
+
+     // returning the sum of the values
+     return [parseInt(Aa1Val), parseInt(Ab1Val), parseInt(Ac1Val)].reduce((a, c) => a + c, 0)
+   }
+
+   function calcA1() {
+     displaySumA()
+   }
+
+   function displaySumA() {
+     document.getElementById('totalA').textContent = calcSumA()
+     document.getElementById('TotalASummary').textContent = calcSumA()
+     document.getElementById('TotalAPercent').textContent = Math.ceil(calcSumA() / 4 * 100) +'%'
+   }
+
+   function calcSumA() {
+     return calcA1R()
+   }
+
+   function calcB1R() {
+     var Ba1 = document.getElementById('Ba1');
+     var Bb1 = document.getElementById('Bb1');
+     var Bc1 = document.getElementById('Bc1');
+
+     var Ba1Val = Ba1.options[Ba1.selectedIndex].value;
+     var Bb1Val = Bb1.options[Bb1.selectedIndex].value;
+     var Bc1Val = Bc1.options[Bc1.selectedIndex].value;
+
+     // returning the sum of the values
+     return [parseInt(Ba1Val), parseInt(Bb1Val), parseInt(Bc1Val)].reduce((a, c) => a + c, 0)
+   }
+
+   function calcB1() {
+     displaySumB()
+   }
+
+   function displaySumB() {
+     document.getElementById('totalB').textContent = calcSumB()
+     document.getElementById('TotalBSummary').textContent = calcSumB()
+     document.getElementById('TotalBPercent').textContent = Math.ceil(calcSumB() / 5 * 100) +'%'
+   }
+
+   function calcSumB() {
+     return calcB1R()
+   }
+
+   function calcC1R() {
+     var Ba1 = document.getElementById('Ca1');
+     var Bb1 = document.getElementById('Cb1');
+     var Bc1 = document.getElementById('Cc1');
+
+     var Ca1Val = Ca1.options[Ca1.selectedIndex].value;
+     var Cb1Val = Cb1.options[Cb1.selectedIndex].value;
+     var Cc1Val = Cc1.options[Cc1.selectedIndex].value;
+
+     // returning the sum of the values
+     return [parseInt(Ca1Val), parseInt(Cb1Val), parseInt(Cc1Val)].reduce((a, c) => a + c, 0)
+   }
+
+   function calcC1() {
+     displaySumC()
+   }
+
+   function displaySumC() {
+     document.getElementById('totalC').textContent = calcSumC()
+     document.getElementById('TotalCSummary').textContent = calcSumC()
+     document.getElementById('TotalCPercent').textContent = Math.ceil(calcSumC() / 6 * 100) +'%'
+   }
+
+   function calcSumC() {
+     return calcC1R()
+   }
+
+   </script>
+
+
     <p>&nbsp;</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
