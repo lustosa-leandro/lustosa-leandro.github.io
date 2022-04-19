@@ -197,8 +197,8 @@ h6 {
 /*next few are nav stuff*/
 
 .logo {
-    cursor: pointer;
     margin-right: auto;
+    height: auto;
 }
 
 .nav__links {
