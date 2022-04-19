@@ -364,5 +364,8 @@ p {
 .introline {
     color: #122372;
     background-color: rgb(243, 243, 252);
+}
+
+.LabStatement {
     line-height: 160%;
 }
