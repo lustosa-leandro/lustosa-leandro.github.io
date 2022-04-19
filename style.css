@@ -44,7 +44,13 @@
 /*to place images side by side use flex container and flex child. For different spacing and padding, make another child*/
 
 .flex-container {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
     display: flex;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding-left: 10%;
     padding-right: 10%;
