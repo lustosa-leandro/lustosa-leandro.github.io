@@ -369,3 +369,8 @@ p {
 .LabStatement {
     line-height: 160%;
 }
+
+.LabStatement b {
+    line-height: 160%;
+    background-color: rgb(243, 243, 252);
+}
